@@ -6,12 +6,19 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class SignUpActivity : AppCompatActivity() {
+
+    // Firebase authentication instance
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+
+        // Initialize Firebase Auth
+        auth = FirebaseAuth.getInstance()
 
         // Initialize views
         val etFullName: EditText = findViewById(R.id.etFullName)
@@ -49,3 +56,16 @@ class SignUpActivity : AppCompatActivity() {
         }
     }
 }
+
+// Firebase authentication for login
+//auth.signInWithEmailAndPassword(email, password)
+//.addOnCompleteListener(this) { task ->
+//    if (task.isSuccessful) {
+//        Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+//        // Redirect to the main activity
+//        startActivity(Intent(this, MainActivity::class.java))
+//        finish()
+//    } else {
+//        Toast.makeText(this, "Login Failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+//    }
+//}

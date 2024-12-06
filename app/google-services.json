@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "569799911560",
+    "project_id": "senyales-fsltalk",
+    "storage_bucket": "senyales-fsltalk.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569799911560:android:e95ab41f2c641ec96dd73d",
+        "android_client_info": {
+          "package_name": "com.example.fsltalk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkNGqdkMYrlC5mWH53Z_7IlRqi4eDcjGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
